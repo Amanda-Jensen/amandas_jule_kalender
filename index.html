@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JuleKalender</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js.js" defer></script>
+    <!-- defer skal være på når man manipulerer dom elementer -->
+</head>
+
+<body>
+
+    <h1>Velkommen til Amandas JuleKalender</h1>
+
+    <div class="item-container">
+
+
+        <div class="item" data-date="1">
+            <img src="/img/looge/bike.jpg" alt="juletræ">
+            <p class="information">Og så var det professoren, der sagde til sin kone:
+                Jeg har en overraskelse til dig til jul.
+                Konen spurte, hvad er det?
+                Jeg har tænkt mig at opkalde en virus efter dig. </p>
+            <div class="item-overlay item-overlay--pink">
+                <p class="item-number">1</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="2">
+            <!-- <img src="/img/looge/carmedic.jpg" alt="juletræ"> -->
+            <iframe id="player1" width="337" height="599" src="https://www.youtube.com/embed/oWaG54bSGeo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="item-overlay item-overlay--red">
+                <p class="item-number">2</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="3">
+            <img src="/img/looge/catlady.jpg" alt="juletræ">
+            <p class="information">Hjælper deres mand dem her i juletravlheden spurgte fru Madsen sin nabokone.
+                Jo sådan da… Jeg vælger julegaverne, og han betaler og bærer dem hjem…
+            </p>
+            <div class="item-overlay item-overlay--blue">
+                <p class="item-number">3</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="4">
+            <img src="/img/looge/charge.jpg" alt="juletræ">
+            <p class="information">
+                Hvad er grønt, dækket af julelys og går ribbit? En mistel-tudse. <br>
+                Hvad er julemandens primære sprog? Nordpol-sprog.
+            </p>
+            <div class="item-overlay item-overlay--red">
+                <p class="item-number">4</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="5">
+            <!-- <img src="/img/looge/complain.jpg" alt="juletræ"> -->
+            <iframe id="player2" width="560" height="315"
+                src="https://www.youtube.com/embed/lWjFtvYmTdg?si=jLc2ixbpJuCSMDbh" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="item-overlay item-overlay--blue">
+                <p class="item-number">5</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="6">
+            <img src="/img/looge/cow.jpg" alt="juletræ">
+            <p class="information">
+                Hvad lider julemanden af, hvis han sidder fast i en skorsten? Klaustrofobi!
+            </p>
+            <div class="item-overlay">
+                <p class="item-number">6</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="7">
+            <iframe id="player1" width="560" height="315"
+                src="https://www.youtube.com/embed/W85oD8FEF78?si=QKV6LOA-s5HQPP-O" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="item-overlay item-overlay--purple">
+                <p class="item-number">7</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="8">
+            <!-- <img src="/img/looge/croc.jpg" alt="juletræ"> -->
+            <iframe id="player1" width="560" height="315"
+                src="https://www.youtube.com/embed/jnk15Wf6xMU?si=KTEq6AoZmFgKNFvR" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="item-overlay item-overlay--pink">
+                <p class="item-number">8</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="9">
+            <!-- <img src="/img/looge/dadjoke.jpg" alt="juletræ"> -->
+            <img src="/img/looge/cowselfie.jpg" alt="juletræ">
+            <p class="information">
+                Dialekter i mûh: Undersøgelser viser, at køers "muh" varierer i tonehøjde og accent alt efter hvilken
+                flok eller region de tilhører.
+            </p>
+            <div class="item-overlay item-overlay--red">
+                <p class="item-number">9</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="10">
+            <img src="/img/looge/distance.jpg" alt="juletræ">
+            <p class="information">
+                Viste du godt at hvis du står overfor en person som skal til at kaste op, hvis du ikke flytter dig så
+                rammer det dig? Fun fact!
+            </p>
+            <div class="item-overlay item-overlay--purple">
+                <p class="item-number">10</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="11">
+            <img src="/img/looge/dolls.jpg" alt="juletræ">
+            <p class="information">
+                Hvad kalder man det, når en snemand får et raserianfald? Et nedsmeltning.
+                Hvad lærer julemandens alfer i skolen? Alfe-betet.
+            </p>
+            <div class="item-overlay item-overlay--blue">
+                <p class="item-number">11</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="12">
+            <!-- <img src="/img/looge/egg.jpg" alt="juletræ"> -->
+            <iframe id="player1" width="560" height="315"
+                src="https://www.youtube.com/embed/z3f7p544euw?si=S5g37ecKactyV7eX" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="item-overlay item-overlay--red">
+                <p class="item-number">12</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="13">
+            <!-- <img src="/img/looge/flower.jpg" alt="juletræ"> -->
+            <iframe id="player1" width="560" height="315"
+                src="https://www.youtube.com/embed/c7BcdGnaN10?si=-3RxmzAipmvVr94y" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="item-overlay item-overlay--purple">
+                <p class="item-number">13</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="14">
+            <img src="/img/looge/goaway.jpg" alt="juletræ">
+            <p class="information">
+                De 4 stadier i livet <br>
+                1. Du tror på Julemanden. <br>
+                2. Du tror ikke på Julemanden. <br>
+                3. Du er Julemanden. <br>
+                4. Du ligner Julemanden.
+            </p>
+            <div class="item-overlay item-overlay--red">
+                <p class="item-number">14</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="15">
+            <img src="/img/looge/haane.jpg" alt="juletræ">
+            <p class="information">
+                Hvad får man, hvis man krydser en snemand med en vampyr? Frostbid.
+            </p>
+            <div class="item-overlay">
+                <p class="item-number">15</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="16">
+            <iframe id="player1" width="560" height="315"
+                src="https://www.youtube.com/embed/rS8WhE8xI4U?si=0qXes6k2wWvjt9Wn" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="item-overlay item-overlay--pink">
+                <p class="item-number">16</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="17">
+            <img src="/img/looge/icecream.jpg" alt="juletræ">
+            <p class="information">
+                Banke banke på! Hvem der? Poul. Poul hvem? Poul loftet sidder nissen med sin julegrød!
+            </p>
+            <div class="item-overlay item-overlay--red">
+                <p class="item-number">17</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="18">
+            <img src="/img/looge/maage.jpg" alt="juletræ">
+            <p class="information">
+                Chuck Norris doesn't cut down a Christmas tree; he looks at it and it just falls over.
+            </p>
+            <div class="item-overlay item-overlay--blue">
+                <p class="item-number">18</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="19">
+            <!-- <img src="/img/looge/peacedog.jpg" alt="juletræ"> -->
+            <iframe id="player1" width="560" height="315"
+                src="https://www.youtube.com/embed/PCnlZzasvhU?si=8AnDtJtfMiVT2jE5" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="item-overlay item-overlay--purple">
+                <p class="item-number">19</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="20">
+            <img src="/img/looge/pika.jpg" alt="juletræ">
+            <p class="information">
+                Hvilken Pokémon elsker at pynte juletræet?
+                Starmie – den sidder altid helt oppe i toppen! 🌟
+            </p>
+            <div class="item-overlay item-overlay--pink">
+                <p class="item-number">20</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="21">
+            <!-- <img src="/img/looge/pumpkin.jpg" alt="juletræ"> -->
+            <iframe id="player1" width="560" height="315"
+                src="https://www.youtube.com/embed/-iLw8vaA1PE?si=aqskNh-lbSFjoLGq" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="item-overlay item-overlay--purple">
+                <p class="item-number">21</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="22">
+            <!-- <img src="/img/looge/sweettun.jpg" alt="juletræ"> -->
+            <img src="/img/looge/horse.jpg" alt="juletræ">
+            <p class="information">Hvilken julesang er hestens absolutte favorit?
+                "Højt fra træets grønne top" især den del med at spise grønt.</p>
+            <div class="item-overlay">
+                <p class="item-number">22</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="23">
+            <img src="/img/looge/toilet.jpg" alt="juletræ">
+            <p class="information">Det var en dreng der sagde til sin far:
+                Far, jeg ønsker mig ikke den der Mountain-bike i julegave alligevel!
+                Faderen: “Hvorfor ikke?”
+                Sønnen: “Fordi jeg lige har fundet en splinterny ude i garagen”.</p>
+            <div class="item-overlay item-overlay--red">
+                <p class="item-number">23</p>
+            </div>
+        </div>
+
+        <div class="item" data-date="24">
+            <img src="/img/pinetree.jpg" alt="juletræ">
+            <p class="information">Tusind tak for at tjekke min JuleKalender hjemmeside ud, glædlig jul!!!</p>
+            <div class="item-overlay">
+                <p class="item-number">24</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

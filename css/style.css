@@ -1,0 +1,196 @@
+/* RESETS */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+img,
+svg,
+video {
+    max-width: 100%;
+    /* max-height: 100px; */
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* RESETS DONE */
+/* ANIMATION */
+
+@keyframes snow {
+    from {
+        background-position-y: 0, 0;
+    }
+
+    to {
+        background-position-y: 300px, 0;
+    }
+}
+
+/* ANIMATION DONE */
+/* STYLE */
+
+h1 {
+    color: black;
+    font-size: 30px;
+    background-color: white;
+    display: flex;
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    border-radius: 2em;
+    margin-top: 2em;
+    text-shadow: black;
+}
+
+body {
+    background-image: url(../img/snowflake.png), url(../img/pinetree.jpg);
+    background-size: auto, cover;
+    background-attachment: fixed, fixed;
+    animation: snow 7s linear infinite, none;
+}
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5em;
+}
+
+.item {
+    text-align: center;
+    /* margin: 20px; */
+    cursor: pointer;
+    position: relative;
+    perspective: 200vw;
+    /* border-top: 20px solid greenyellow; */
+    border-collapse: collapse;
+}
+
+.item::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    bottom: 100%;
+    width: 30px;
+    height: 20px;
+    background-color: gold;
+}
+
+.item img {
+    display: block;
+}
+
+.item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom left, green, yellow);
+    color: white;
+    border: 2px solid black;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(0deg);
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+    border-radius: 50%;
+}
+
+.item-overlay--blue {
+    background-image: linear-gradient(to bottom right, blue, cyan);
+}
+
+.item-overlay--pink {
+    background: repeating-radial-gradient(circle at center,
+            rgb(255, 50, 255),
+            rgb(255, 50, 255) 40px,
+            rgb(190, 60, 197) 40px,
+            rgb(190, 60, 197) 80px,
+            rgb(250, 192, 255) 80px,
+            rgb(250, 192, 255) 120px);
+    background-size: 300px 600px;
+}
+
+.item-overlay--red {
+    background-image: radial-gradient(rgb(146, 51, 51) 35%, rgb(180, 76, 76) 15%);
+    background-size: 10px 10px;
+}
+
+.item-overlay--purple {
+    background: repeating-linear-gradient(45deg, rgb(255, 243, 70), rgb(255, 246, 164) 30px, rgb(238, 232, 177) 30px);
+}
+
+.item-number {
+    font-size: 3em;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+#player1,
+#player2 {
+    border-radius: 7em;
+    height: 200px;
+    width: 200px;
+    /* margin: 0 auto; */
+}
+
+.information {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    padding: 0.5em;
+    text-align: center;
+    background-color: rgba(52, 187, 52, 0.7);
+    max-width: 170px;
+    margin: 0 auto;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    border-radius: 1em;
+}
+
+.item.open .item-overlay {
+    transform: rotateY(-93deg);
+}
+
+.item.open .item-number {
+    display: none;
+    opacity: 0;
+}
+
+
+/* STYLE END */
+
+@media screen and (min-width:660px) {
+    .item-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (width < 550px) {
+    .item-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 100px));
+    }
+}
