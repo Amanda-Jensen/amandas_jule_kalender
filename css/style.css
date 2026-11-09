@@ -36,11 +36,15 @@ video {
 /* STYLE */
 
 h1 {
-    color: black;
+    color: gold;
     font-size: 30px;
-    background-color: white;
+    background-image: repeating-linear-gradient(45deg,
+            white,
+            white 10px,
+            red 10px,
+            red 20px);
     display: flex;
-    max-width: 600px;
+    max-width: 80vw;
     text-align: center;
     justify-content: center;
     height: 50px;
@@ -49,7 +53,8 @@ h1 {
     margin-bottom: 4em;
     border-radius: 2em;
     margin-top: 2em;
-    text-shadow: black;
+    text-shadow: 3px 3px 1px black;
+    padding: 2em;
 }
 
 body {
@@ -64,11 +69,11 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 5em;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 3em;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5em;
+    justify-content: center;
 }
 
 .item {
@@ -114,6 +119,7 @@ body {
     transform-style: preserve-3d;
     transition: transform 2s;
     border-radius: 50%;
+
 }
 
 .item-overlay--blue {
@@ -186,6 +192,12 @@ body {
 @media screen and (min-width:660px) {
     .item-container {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (width < 1150px) {
+    .item-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 100px));
     }
 }
 
